@@ -16,28 +16,29 @@ function App() {
   //check if you have access with console.log
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  // const handleAddOne = ()=>{
-  //   dispatch(addOne());
-  //   console.log('working');
-  // };
+  const handleAddOne = ()=>{
+    dispatch(addOne());
+    console.log('working');
+  };
 
   const handleApply = (number)=>{
     dispatch(applyNumber(number));
-    console.log('i work')
+    console.log('apply number');
   };
 
   const handleOpClick = (operator) => {
     dispatch(changeOperation(operator));
+    console.log('operator change');
   }
 
   const handleClear = () => {
     dispatch(clearDisplay());
-    console.log('work');
+    console.log('clear');
   }
 
   const handleMemory = (number) => {
     dispatch(setMemory(number));
-    console.log('work work');
+    console.log('set to memory');
   }
 
   const handleRecall = (number) => {
@@ -47,7 +48,7 @@ function App() {
 
   const handleMemClear = () => {
     dispatch(memoryClear());
-    console.log('here');
+    console.log('memory clear');
   }
 
 
