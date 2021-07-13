@@ -16,10 +16,10 @@ function App() {
   //check if you have access with console.log
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const handleAddOne = ()=>{
-    dispatch(addOne());
-    console.log('working');
-  };
+  // const handleAddOne = ()=>{
+  //   dispatch(addOne());
+  //   console.log('working');
+  // };
 
   const handleApply = (number)=>{
     dispatch(applyNumber(number));
